@@ -38,8 +38,8 @@ config.show_tabs_in_tab_bar = true
 config.initial_rows = 27
 config.initial_cols = 93
 
--- require('events.right-status').setup()
--- require('events.tab-title').setup()
--- require('events.new-tab-button').setup()
+require('events.right-status').setup()
+require('events.tab-title').setup()
+require('events.new-tab-button').setup()
 
 return config
