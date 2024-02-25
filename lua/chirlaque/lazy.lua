@@ -11,11 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
-	{
-  "folke/tokyonight.nvim",
-  lazy = true,
-  opts = { style = "moon" },
-},
+{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },	
 	{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'},
 	{
 		"lewis6991/gitsigns.nvim",
